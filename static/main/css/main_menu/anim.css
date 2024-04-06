@@ -1,0 +1,57 @@
+main .wrapper .h1-hello {
+  text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 21px #fff,
+      0 0 42px #d5da42,
+      0 0 82px #fcec43,
+      0 0 92px #e5d63b,
+      0 0 102px #e3c113,
+      0 0 151px #e3a70a;
+}
+
+main .enter #enter {
+  text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 21px #fff,
+      0 0 42px #0fa,
+      0 0 82px #0fa,
+      0 0 92px #0fa,
+      0 0 102px #0fa,
+      0 0 151px #0fa;
+}
+
+main .btn {
+    text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 21px #fff,
+      0 0 42px #66adea,
+      0 0 82px #14acff,
+      0 0 92px #004eff,
+      0 0 102px #000eff,
+      0 0 151px #0006ff;
+}
+
+
+.wrapper {
+    position: relative;
+    animation: my_animation 1s;
+    animation-fill-mode: both;
+
+}
+
+@keyframes my_animation {
+    from {
+        left: -300px;
+        opacity: 0
+    }
+
+    to {
+        left: 0;
+        opacity: 1
+    }
+}
+
+

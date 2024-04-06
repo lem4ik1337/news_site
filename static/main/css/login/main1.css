@@ -1,0 +1,88 @@
+main {
+    display: flex;
+    justify-content: center;
+}
+
+main .wrapper {
+    border: 2px solid black;
+    position: absolute;
+    margin-top: 200px;
+    height: 300px;
+    width: 300px;
+    border-image: conic-gradient(from var(--angle), rgb(240, 9, 9), rgb(60, 233, 17), rgb(231, 141, 6), rgb(5, 83, 228)) 1;
+    animation: 3s rotate linear infinite;
+    --angle: 0deg;
+}
+
+.form-register {
+    text-align: right;
+    margin-right: 15px;
+}
+
+#register-a {
+    text-decoration: underline;
+    color: orange;
+    text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 21px #fff,
+      0 0 42px #66adea,
+      0 0 82px #14acff,
+      0 0 92px #004eff,
+      0 0 102px #000eff,
+      0 0 151px #0006ff;
+}
+
+.not-account {
+    color: white;
+    text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 21px #fff,
+      0 0 42px #66adea,
+      0 0 82px #14acff,
+      0 0 92px #004eff,
+      0 0 102px #000eff,
+      0 0 151px #0006ff;
+}
+
+main .wrapper #login {
+    margin-top: 100px;
+
+}
+
+main .wrapper #login, main .wrapper #password {
+    width: 200px;
+    margin-left: 50px;
+
+}
+
+main .wrapper #sumbit {
+    margin-left: 185px;
+    text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 21px #fff,
+      0 0 42px #0fa,
+      0 0 82px #0fa,
+      0 0 92px #0fa,
+      0 0 102px #0fa,
+      0 0 151px #0fa;
+}
+
+
+@keyframes rotate {
+  to {
+    --angle: 360deg;
+  }
+}
+
+@property --angle {
+  syntax: '<angle>';
+  initial-value: 0deg;
+  inherits: false;
+}
+
+.error {
+    margin-top: 50px;
+}

@@ -1,0 +1,98 @@
+body {
+    display: block;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: #2980b9 url('https://static.tumblr.com/03fbbc566b081016810402488936fbae/pqpk3dn/MRSmlzpj3/tumblr_static_bg3.png') repeat 0 0;
+  -webkit-animation: 10s linear 0s normal none infinite animate;
+  -moz-animation: 10s linear 0s normal none infinite animate;
+  -ms-animation: 10s linear 0s normal none infinite animate;
+  -o-animation: 10s linear 0s normal none infinite animate;
+  animation: 10s linear 0s normal none infinite animate;
+
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+@-webkit-keyframes animate {
+  from {background-position:0 0;}
+  to {background-position: 500px 0;}
+}
+
+@-moz-keyframes animate {
+  from {background-position:0 0;}
+  to {background-position: 500px 0;}
+}
+
+@-ms-keyframes animate {
+  from {background-position:0 0;}
+  to {background-position: 500px 0;}
+}
+
+@-o-keyframes animate {
+  from {background-position:0 0;}
+  to {background-position: 500px 0;}
+}
+
+@keyframes animate {
+  from {background-position:0 0;}
+  to {background-position: 500px 0;}
+}
+
+main .date {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+main .date-label {
+    font-size: 15px;
+}
+
+main .user {
+    font-size: 35px;
+}
+
+main .exit-div {
+    text-align: center;
+    justify-content: center;
+    width: 500px;
+    margin-top: 175px;
+    margin-left: 50px;
+
+}
+
+main #exit {
+    text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 21px #fff,
+      0 0 42px #ff0000,
+      0 0 82px #ff0606,
+      0 0 92px #ff0000,
+      0 0 102px #ff0052,
+      0 0 151px #ff0000;
+}
+
+
+
+main .wrapper {
+    border: 2px solid dodgerblue;
+    width: 600px;
+    height: 350px;
+    margin-top: 200px;
+    justify-content: center;
+    text-align: center;
+}
+
+.menu {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.content-menu {
+    padding-top: 40px;
+    height: 100px;
+}

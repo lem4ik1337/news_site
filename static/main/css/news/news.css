@@ -1,0 +1,94 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(99deg, #E6E6FA, silver, #E6E6FA, #87CEFA);
+    justify-content:center;
+    align-content:center;
+    height:100vh;
+}
+
+
+#homebtn {
+    margin-left: 10px;
+}
+
+.h1-news {
+    text-align: center;
+
+}
+
+.content {
+    justify-content: center;
+    text-align: center;
+    margin-top: 10px;
+    font-family: "Roboto Light", "Ubuntu Light", "Ubuntu", monospace;
+}
+
+.border-content {
+    border: 2px solid #502081;
+}
+
+.anons {
+    max-width: 500px;
+    word-wrap: break-word;
+}
+
+.user {
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+}
+
+.user-all {
+    font-size: 15px;
+}
+
+#creation {
+    margin-left: 10px;
+}
+
+.create-news {
+    border: 2px solid #2980b9;
+    font-size: 25px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    font-family: "Roboto Light", "Ubuntu Light", "Ubuntu", monospace;
+    border-radius: 10px;
+    color: #00ffaa;
+    text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 21px #fff,
+      0 0 42px #0fa,
+      0 0 82px #0fa,
+      0 0 92px #0fa,
+      0 0 102px #0fa,
+      0 0 151px #0fa;
+
+}
+
+.create-news:hover {
+    color: #f85555;
+    text-shadow:
+      0 0 7px #c15b5b,
+      0 0 10px #c16666,
+      0 0 21px #c67171,
+      0 0 42px #d68a8a,
+      0 0 82px #6f3333,
+      0 0 92px #ad3636,
+      0 0 102px #b72626,
+      0 0 151px #f80505;
+}
+
+.menu {
+    display: flex;
+    justify-content: end;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+#open-news {
+    margin-top: 10px;
+}

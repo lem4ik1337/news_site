@@ -1,0 +1,41 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ klass }}</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{% static 'main/css/admins/new_user.css' %}">
+</head>
+<body>
+    <table id="table1" class="table">
+        <thead>
+        <tr>
+            <th scope="col">Логин</th>
+            <th scope="col">Пароль</th>
+            <th scope="col">Имя</th>
+            <th scope="col">Фамилия</th>
+            <th scope="col">Класс</th>
+        </tr>
+        </thead>
+        <tbody>
+    {% for el in users %}
+        <tr>
+        {% if not el.is_staff %}
+            <td class="table-success" scope="row">{{ el.username}}</td>
+            <td class="table-success" scope="row">{{ el.email }}</td>
+            <td class="table-success" scope="row">{{ el.first_name }}</td>
+            <td class="table-success" scope="row">{{ el.last_name }}</td>
+            <td class="table-success" scope="row">{{ klass }}</td>
+        {% endif %}
+        </tr>
+    {% endfor%}
+        </tbody>
+    </table><br>
+    <form method="post">
+        {% csrf_token %}
+        <textarea id='text' class="form-control form-control-lg" name="text" id="text"></textarea>
+        <button id="sub" class="btn btn-primary" type="submit">Отправить</button>
+    </form>
+</body>
+</html>

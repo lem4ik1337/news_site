@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+table {
+    font-size: 15px;
+
+}
+
+#table1 {
+    width: 600px;
+    margin-left: 20px;
+}
+
+table tbody {
+    color: #2980b9;
+}
+
+#text {
+    margin-left: 20px;
+    width: 700px;
+    height: 300px;
+}
+
+#sub {
+    margin-left: 20px;
+    margin-top: 10px;
+}

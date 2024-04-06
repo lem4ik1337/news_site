@@ -1,0 +1,53 @@
+{% load static %}
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{% static 'main/css/news/news.css' %}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <title>Новости</title>
+</head>
+<body>
+    <div class="menu">
+        {% if user.is_authenticated %}
+            <a id="profilebtn" class="btn btn-warning" href="{% url 'profile' %}">{{ user.username }}</a>
+        {% else %}
+            <a id="login" class="btn btn-success" href="{% url 'login' %}">Войти</a>
+        {% endif %}
+        <a id="homebtn" class="btn btn-info" href="{% url 'index' %}">Главное меню</a>
+        {% if user.is_authenticated %}
+            <a id="creation" class="btn btn-success" href="{% url 'creation_news' %}">Создать новость</a>
+        {% endif %}
+    </div>
+
+
+    <h1 class="h1-news">Новости</h1>
+    <h1 class="h1-news">Страница: {{ news_list.number }}</h1>
+
+    <div class="content">
+
+            {% for i in news_list %}
+                <div class="border-content">
+                    <label class="user-all">Пользователь:</label><label class="user">{{ i.user }}</label><br>
+                    Заголовок: {{ i.title }}<br>
+                    Спойлер: <label class="anons">{{ i.anons }}</label><br>
+                    <a id="open-news" class="btn btn-info" href="{% url 'detail_news' i.id %}">Открыть новость</a><br><br>
+                </div>
+            {% endfor %}
+
+    </div>
+
+    <div class="container text-center">
+        {% if news_list.has_previous %}
+            <a class="btn btn-warning" href="?news={{ news_list.previous_page_number }}">Назад</a>
+        {% endif %}
+        {% if news_list.has_next %}
+            <a class="btn btn-warning" href="?news={{ news_list.next_page_number }}">Вперёд</a>
+        {% endif %}
+    </div>
+
+</body>
+</html>

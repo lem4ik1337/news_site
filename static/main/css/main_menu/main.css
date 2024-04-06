@@ -1,0 +1,42 @@
+
+
+main .enter {
+    text-align: right;
+    margin-right: 25px;
+    margin-top: 25px;
+}
+
+main .wrapper {
+    text-align:center;
+    margin-top: 20vh;
+}
+
+main .wrapper .quote {
+    --angle: 0deg;
+    /* … */
+    border: solid 2px;
+    border-image: conic-gradient(from var(--angle), black, whitesmoke, mediumpurple, cornflowerblue) 1;
+    animation: 3s rotate linear infinite;
+}
+
+@keyframes rotate {
+  to {
+    --angle: 360deg;
+  }
+}
+
+@property --angle {
+  syntax: '<angle>';
+  initial-value: 0deg;
+  inherits: false;
+}
+
+main .wrapper .btn {
+    margin-top: 3px;
+}
+
+main #btn1 {
+    margin-right: 20px;
+}
+
+

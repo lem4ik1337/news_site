@@ -1,0 +1,33 @@
+
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+#content {
+    margin-top: 50px;
+}
+
+.title- {
+    font-weight: bold;
+}
+
+.text- {
+    max-width:900px;
+    word-wrap:break-word;
+}
+
+#login {
+    margin-right: 25px;
+}
+
+.menu {
+    display: flex;
+    justify-content: end;
+}
