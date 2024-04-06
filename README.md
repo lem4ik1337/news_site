@@ -1,1 +1,1 @@
-# news_site
+# maksimddass_pythonanywhere
